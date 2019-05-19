@@ -94,14 +94,11 @@ let init = app => {
     ];
 
   let innerStyle = Style.[flexDirection(`Row), alignItems(`FlexEnd)];
+  let textareaStyle = Style.[width(300), height(200)];
 
   let element =
     <View style=containerStyle>
-      <View style=innerStyle>
-        <animatedText delay=0.0 textContent="Welcome" />
-        <animatedText delay=0.5 textContent="to" />
-        <animatedText delay=1. textContent="Revery" />
-      </View>
+      <Input style=textareaStyle />
       <simpleButton />
     </View>;
 
